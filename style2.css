@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.karusel{
+    width: 50px;
+    height: 50px;
+    background:url(./pexels-fwstudio-172289.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+0%{
+    transform: rotate(0deg);
+}
+100%{
+    transform: rotate(360deg);
+}
+}
+.karusel .shohlar{
+position: absolute;
+width: 25px;
+height: 200px;
+background:url(./pexels-fwstudio-172289.jpg);
+background-size: cover;
+
+}
+.shohlar:nth-child(1){
+    top: -350%;
+    left: 13px;
+    transform-origin: bottom;
+}
+.shohlar:nth-child(2){
+    top: 50%;
+    left: 13px;
+    transform-origin: bottom;
+}
+.shohlar:nth-child(3){
+    top: -350%;
+    left: 25%;
+    transform: rotate(90deg);
+    transform-origin: bottom;
+}
+.shohlar:nth-child(4){
+    top: -350%;
+    left: 10%;
+    transform: rotate(-90deg);
+    transform-origin: bottom;
+}
+.shohlar img{
+    width: 200%;
+    position:relative;
+}
+.shohlar:nth-child(1) img{
+    top: -20%;
+    right: 30%;
+    transform: rotate(90deg);
+}
+.shohlar:nth-child(2) img{
+    top: 80%;
+    right: 60%;
+    transform: rotate(-90deg);
+}
+.shohlar:nth-child(3) img{
+    top: -20%;
+    right: 30%;
+    transform: rotate(90deg);
+}
+.shohlar:nth-child(4) img{
+    top: -20%;
+    right: 30%;
+    transform: rotate(90deg);
+}
+.circle{
+    margin-top: -440%;
+    margin-left: -2.2rem;
+    border-radius: 50%;
+    border: 10px solid sienna;
+    padding: 50px;
+}
+.circle2{
+   margin-left: -8.5rem;
+   margin-top: -8.5rem;
+    border-radius: 50%;
+    border: 10px solid sienna;
+    padding: 150px;
+}
